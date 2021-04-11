@@ -4,7 +4,7 @@ import "./HaldiSection.css";
 function HaldiSection() {
   return (
     <>
-      <div className="schedule-haldi">
+      <div id="haldi" className="schedule-haldi">
         <div>
           <h2>Haldi</h2>
           <h3>

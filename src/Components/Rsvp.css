@@ -1,4 +1,26 @@
 .rsvp {
   width: 100%;
-  height: 30%;
+  height: 50%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+.rsvp-msg {
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+.rsvp-btn {
+  border-radius: 0.3rem;
+  background-color: rgb(160, 27, 104);
+  color: blanchedalmond;
+  text-decoration: none;
+  font: outline;
+  cursor: pointer;
+  height: 45px;
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+}
+.spacing {
+  padding: 1%;
 }

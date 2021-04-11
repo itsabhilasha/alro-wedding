@@ -1,0 +1,10 @@
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 50%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(169, 214, 158);
+}
