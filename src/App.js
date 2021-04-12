@@ -8,8 +8,15 @@ import WeddingSection from "./Components/WeddingSection";
 import Rsvp from "./Components/Rsvp";
 import FAQ from "./Components/FAQ";
 import RsvpForm from "./Components/RsvpForm";
+import { useState } from "react";
 
 function App() {
+  const [rsvpVisible, setRsvpVisible] = useState(false);
+
+  const toggleRsvp = () => {
+    setRsvpVisible(!rsvpVisible);
+  };
+
   return (
     <div className="App">
       <Nav />
@@ -18,9 +25,9 @@ function App() {
       <HaldiSection />
       <SangeetSection />
       <WeddingSection />
-      <Rsvp />
+      <Rsvp toggleRsvp={() => toggleRsvp()} />
       <FAQ />
-      <RsvpForm />
+      <RsvpForm visible={rsvpVisible} toggleRsvp={() => toggleRsvp()} />
     </div>
   );
 }

@@ -10,47 +10,55 @@
 .rsvp__form {
   position: fixed;
   left: calc(50% - 150px);
-  top: calc(50% - 150px);
+  top: calc(50% - 200px);
   width: 300px;
-  height: 300px;
+  height: 320px;
   background-color: white;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
 }
 
 .rsvp__title {
-  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rsvp__leftBuffer {
+  width: 40px;
+}
+
+.rsvp__heading {
+  display: flex;
+  align-items: center;
 }
 
 .rsvp__brideGroomSelection {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 85%;
+  flex-wrap: nowrap !important;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
 .rsvp__name {
-  width: 80%;
-  height: 20px;
-  margin-bottom: 20px;
+  width: 85%;
+  margin-bottom: 20px !important;
 }
 
 .rsvp__arrivalDate {
-  width: 80%;
-  height: 20px;
-  text-align: left;
+  width: 85%;
+  margin-bottom: 20px !important;
 }
 
 .rsvp__submit {
-  width: 82%;
-  height: 30px;
+  width: 85%;
+  height: 40px;
 }
-
+/* 
 html,
 body {
   overflow: hidden;
-}
+} */

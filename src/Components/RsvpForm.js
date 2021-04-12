@@ -1,64 +1,90 @@
 import React, { useState } from "react";
 import "./RsvpForm.css";
+import {
+  TextField,
+  Radio,
+  RadioGroup,
+  FormControlLabel,
+  Button,
+} from "@material-ui/core";
 
-function RsvpForm() {
+function RsvpForm({ visible, toggleRsvp }) {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [brideGroom, setBrideGroom] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("submitted: ", name, date, brideGroom);
+    if (name === "" || date === "" || brideGroom === "") {
+      alert("Please enter all details");
+    } else {
+      console.log("submitted: ", name, date, brideGroom);
+    }
   };
 
-  return (
+  return visible ? (
     <div className="rsvp__cover">
-      <form className="rsvp__form" onSubmit={handleSubmit}>
-        <div className="rsvp__title">RSVP | ALRO</div>
-        <div className="rsvp__brideGroomSelection">
-          <div className="radio">
-            <label>
-              <input
-                type="radio"
-                value="Bride"
-                checked={brideGroom === "Bride"}
-                onChange={(e) => setBrideGroom(e.target.value)}
-              />
-              Bride Side
-            </label>
-          </div>
-          <div className="radio">
-            <label>
-              <input
-                type="radio"
-                value="Groom"
-                checked={brideGroom === "Groom"}
-                onChange={(e) => setBrideGroom(e.target.value)}
-              />
-              Groom Side
-            </label>
-          </div>
+      <form className="rsvp__form" noValidate autoComplete="off">
+        <div className="rsvp__title">
+          <div className="rsvp__leftBuffer"></div>
+          <div className="rsvp__heading">RSVP | ALRO</div>
+          <Button onClick={() => toggleRsvp()}>X</Button>
         </div>
-        <label className="rsvp__arrivalDate">Names:</label>
-        <input
-          type="text"
-          placeholder="separate with comma"
+        <RadioGroup
+          row
+          className="rsvp__brideGroomSelection"
+          aria-label="brideGroomSide"
+          name="brideGroomSide"
+        >
+          <FormControlLabel
+            value="Bride"
+            control={<Radio />}
+            label="Bride Side"
+            checked={brideGroom === "Bride"}
+            onChange={(e) => setBrideGroom(e.target.value)}
+          />
+          <FormControlLabel
+            value="Groom"
+            control={<Radio />}
+            label="Groom Side"
+            checked={brideGroom === "Groom"}
+            onChange={(e) => setBrideGroom(e.target.value)}
+          />
+        </RadioGroup>
+        <TextField
           className="rsvp__name"
+          id="outlined-secondary"
+          label="Names (separated with comma)"
+          variant="outlined"
+          color="secondary"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <label className="rsvp__arrivalDate">Arrival Date:</label>
-        <input
+        <TextField
+          className="rsvp__arrivalDate"
+          id="date"
+          label="Arrival Date"
           type="date"
-          min="2021-04-20"
-          max="2021-04-25"
-          className="rsvp__name"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          InputProps={{ inputProps: { min: "2021-04-20", max: "2021-04-25" } }}
+          color="secondary"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
-        <input className="rsvp__submit" type="submit" value="Submit" />
+        <Button
+          className="rsvp__submit"
+          variant="contained"
+          color="secondary"
+          onClick={handleSubmit}
+        >
+          Submit
+        </Button>
       </form>
     </div>
+  ) : (
+    <div></div>
   );
 }
 
