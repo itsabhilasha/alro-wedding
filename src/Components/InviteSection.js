@@ -33,7 +33,7 @@ function InviteSection() {
   return (
     <>
       <div className="peacock-message">
-        <img className="peacock-img" src={peacock} />
+        <img alt="peacock" className="peacock-img" src={peacock} />
         <div className="message">
           <div>Dear relatives & friends,</div>
           <div className="msg-body">
@@ -43,9 +43,9 @@ function InviteSection() {
           <div>Love,</div>
           <div>Abhilasha & Rohit</div>
         </div>
-        <img className="peacock-img" src={peacock} />
+        <img alt="peacock" className="peacock-img" src={peacock} />
       </div>
-      <div class="hashtags">
+      <div className="hashtags">
         <div>#ALROhitched</div>
         <div>#GaurgeousCouple</div>
         <div>#RohitKiAbhilasha</div>

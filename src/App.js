@@ -7,6 +7,7 @@ import SangeetSection from "./Components/SangeetSection";
 import WeddingSection from "./Components/WeddingSection";
 import Rsvp from "./Components/Rsvp";
 import FAQ from "./Components/FAQ";
+import RsvpForm from "./Components/RsvpForm";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <WeddingSection />
       <Rsvp />
       <FAQ />
+      <RsvpForm />
     </div>
   );
 }

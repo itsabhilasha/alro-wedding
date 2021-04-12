@@ -1,0 +1,56 @@
+.rsvp__cover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.8);
+}
+
+.rsvp__form {
+  position: fixed;
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.rsvp__title {
+  margin-bottom: 20px;
+}
+
+.rsvp__brideGroomSelection {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.rsvp__name {
+  width: 80%;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.rsvp__arrivalDate {
+  width: 80%;
+  height: 20px;
+  text-align: left;
+}
+
+.rsvp__submit {
+  width: 82%;
+  height: 30px;
+}
+
+html,
+body {
+  overflow: hidden;
+}
