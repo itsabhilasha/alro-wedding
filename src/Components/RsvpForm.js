@@ -31,10 +31,10 @@ function RsvpForm({ visible, toggleRsvp }) {
 
       emailjs
         .send(
-          process.env.serviceID,
-          process.env.templateID,
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
           templateParams,
-          process.env.userID
+          process.env.REACT_APP_USER_ID
         )
         .then(
           (result) => {
