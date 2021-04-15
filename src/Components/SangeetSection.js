@@ -11,7 +11,7 @@ function SangeetSection() {
             Location: Star of South Hall and Lawn, Lukshmi Vilas Palace,
             Vadodara, Gujarat
           </h3>
-          <h3>Time: 3 p.m. onwards</h3>
+          <h3>Date: 24th of April, 3 p.m. onwards</h3>
           <h3>Dress Code: Dark colors for women and formals for men</h3>
           <h4>
             Indulge in the celebration of our union with an evening of music,
