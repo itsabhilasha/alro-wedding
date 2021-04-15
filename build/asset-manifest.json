@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b2c102d.chunk.css",
+    "main.css": "/static/css/main.fbd1be45.chunk.css",
     "main.js": "/static/js/main.2c7fad3d.chunk.js",
     "main.js.map": "/static/js/main.2c7fad3d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.469777b8.js",
@@ -10,16 +10,16 @@
     "static/js/3.f5c5393a.chunk.js": "/static/js/3.f5c5393a.chunk.js",
     "static/js/3.f5c5393a.chunk.js.map": "/static/js/3.f5c5393a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2b2c102d.chunk.css.map": "/static/css/main.2b2c102d.chunk.css.map",
+    "static/css/main.fbd1be45.chunk.css.map": "/static/css/main.fbd1be45.chunk.css.map",
     "static/js/2.9393ee20.chunk.js.LICENSE.txt": "/static/js/2.9393ee20.chunk.js.LICENSE.txt",
     "static/media/Banner.css": "/static/media/alro_img.7a56bd77.jpg",
     "static/media/SangeetSection.css": "/static/media/colorful.3fdb0325.jpg",
-    "static/media/HaldiSection.css": "/static/media/yellow.e2b9bbe2.jpg"
+    "static/media/HaldiSection.css": "/static/media/yellow.ff7f3896.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.469777b8.js",
     "static/js/2.9393ee20.chunk.js",
-    "static/css/main.2b2c102d.chunk.css",
+    "static/css/main.fbd1be45.chunk.css",
     "static/js/main.2c7fad3d.chunk.js"
   ]
 }
