@@ -1,8 +1,7 @@
 import React from "react";
 import "./InviteSection.css";
-import peacock from "./../images/peacock.jpg";
 
-var countDownDate = new Date("Apr 25, 2021 18:00:00").getTime();
+var countDownDate = new Date("Apr 25, 2021 09:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -33,7 +32,6 @@ function InviteSection() {
   return (
     <>
       <div className="peacock-message">
-        <img alt="peacock" className="peacock-img" src={peacock} />
         <div className="message">
           <div>Dear relatives & friends,</div>
           <div className="msg-body">
@@ -43,7 +41,6 @@ function InviteSection() {
           <div>Love,</div>
           <div>Abhilasha & Rohit</div>
         </div>
-        <img alt="peacock" className="peacock-img" src={peacock} />
       </div>
       <div className="hashtags">
         <div>#ALROhitched</div>

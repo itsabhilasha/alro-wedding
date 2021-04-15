@@ -5,8 +5,10 @@ function Banner() {
   return (
     <>
       <div className="name-date">
-        <h2>Abhilasha and Rohit</h2>
-        <h3>April 25th, 2021 | Vadodara, Gujarat</h3>
+        <div className="banner__content">
+          <h1>Abhilasha and Rohit</h1>
+          <h2>April 25th, 2021</h2>
+        </div>
       </div>
     </>
   );

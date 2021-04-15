@@ -6,7 +6,7 @@ import InviteSection from "./Components/InviteSection";
 import SangeetSection from "./Components/SangeetSection";
 import WeddingSection from "./Components/WeddingSection";
 import Rsvp from "./Components/Rsvp";
-import FAQ from "./Components/FAQ";
+import Contactus from "./Components/contactus";
 import RsvpForm from "./Components/RsvpForm";
 import { useState } from "react";
 
@@ -26,8 +26,8 @@ function App() {
       <SangeetSection />
       <WeddingSection />
       <Rsvp toggleRsvp={() => toggleRsvp()} />
-      <FAQ />
       <RsvpForm visible={rsvpVisible} toggleRsvp={() => toggleRsvp()} />
+      <Contactus />
     </div>
   );
 }

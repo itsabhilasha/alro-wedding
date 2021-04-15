@@ -17,10 +17,15 @@
   font: outline;
   cursor: pointer;
   height: 45px;
-  width: 20%;
+  width: 120px;
   text-align: center;
   font-weight: bold;
 }
 .spacing {
   padding: 1%;
+}
+
+.schedule__rsvpContent {
+  width: 90%;
+  margin: auto;
 }

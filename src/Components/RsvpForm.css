@@ -15,9 +15,9 @@
 
 .rsvp__form {
   position: fixed;
-  left: calc(50% - 150px);
+  left: calc(50% - 160px);
   top: calc(50% - 200px);
-  width: 300px;
+  width: 320px;
   height: 320px;
   background-color: white;
   border-radius: 10px;

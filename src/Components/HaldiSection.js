@@ -5,7 +5,7 @@ function HaldiSection() {
   return (
     <>
       <div id="haldi" className="schedule-haldi">
-        <div>
+        <div className="schedule__haldiContent">
           <h2>Haldi</h2>
           <h3>
             Location: Pool-side lawn, Banyan Paradise Resort, Vadodara, Gujarat

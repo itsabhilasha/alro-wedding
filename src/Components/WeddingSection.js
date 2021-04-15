@@ -5,15 +5,19 @@ function WeddingSection() {
   return (
     <>
       <div className="schedule-wedding">
-        <h2>Wedding</h2>
-        <h3>
-          Location: Suvarna Mahal, Laxminarayan Club & Resort, Vadodara, Gujarat
-        </h3>
-        <h3>Time: 5 p.m. onwards</h3>
-        <h3>Dress Code: Pinks and Reds</h3>
-        <h4>
-          A fine evening packed with wedding rituals and unforgettable grandeur!
-        </h4>
+        <div className="schedule__weddingContent">
+          <h2>Wedding</h2>
+          <h3>
+            Location: Suvarna Mahal, Laxminarayan Club & Resort, Vadodara,
+            Gujarat
+          </h3>
+          <h3>Time: 9 a.m. onwards</h3>
+          <h3>Dress Code: Pink/red for women and cream/white for men</h3>
+          <h4>
+            A fine morning packed with wedding rituals and unforgettable
+            grandeur!
+          </h4>
+        </div>
       </div>
     </>
   );
