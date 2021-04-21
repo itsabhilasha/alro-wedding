@@ -41,7 +41,7 @@ function RsvpForm({ visible, toggleRsvp }) {
           setBrideGroom("");
 
           if (result.text === "OK") {
-            alert("RSVP Successfull!");
+            alert("RSVP Successful!");
             toggleRsvp();
           }
         },
