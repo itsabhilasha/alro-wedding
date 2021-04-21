@@ -12,7 +12,7 @@ function Contactus() {
             Do you have any song requests for sangeet? Is there any information
             that you need with regards to the wedding?
           </p>
-          <p>Reach out to our wedding Planner - </p>
+          <p>Reach out to our wedding planner - </p>
           <p>White Lily Events - +917043891089 | +919227409022 </p>
         </div>
       </div>
