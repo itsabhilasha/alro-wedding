@@ -18,41 +18,42 @@ function RsvpForm({ visible, toggleRsvp }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name === "" || date === "" || brideGroom === "") {
-      alert("Please enter all details");
-    } else {
-      setWaiting(true);
+    alert("Oops! The event is already completed.");
+    // if (name === "" || date === "" || brideGroom === "") {
+    //   alert("Please enter all details");
+    // } else {
+    //   setWaiting(true);
 
-      const templateParams = {
-        name: name,
-        date: date,
-        brideGroom: brideGroom,
-      };
+    //   const templateParams = {
+    //     name: name,
+    //     date: date,
+    //     brideGroom: brideGroom,
+    //   };
 
-      const serviceID = process.env.REACT_APP_SERVICE_ID;
-      const templateID = process.env.REACT_APP_TEMPLATE_ID;
-      const userID = process.env.REACT_APP_USER_ID;
+    //   const serviceID = process.env.REACT_APP_SERVICE_ID;
+    //   const templateID = process.env.REACT_APP_TEMPLATE_ID;
+    //   const userID = process.env.REACT_APP_USER_ID;
 
-      emailjs.send(serviceID, templateID, templateParams, userID).then(
-        (result) => {
-          setWaiting(false);
-          setName("");
-          setDate("");
-          setBrideGroom("");
+    //   emailjs.send(serviceID, templateID, templateParams, userID).then(
+    //     (result) => {
+    //       setWaiting(false);
+    //       setName("");
+    //       setDate("");
+    //       setBrideGroom("");
 
-          if (result.text === "OK") {
-            alert("RSVP Successful!");
-            toggleRsvp();
-          }
-        },
-        (error) => {
-          setWaiting(false);
-          alert(
-            "Error: Please try again or contact site admin if this persists."
-          );
-        }
-      );
-    }
+    //       if (result.text === "OK") {
+    //         alert("RSVP Successful!");
+    //         toggleRsvp();
+    //       }
+    //     },
+    //     (error) => {
+    //       setWaiting(false);
+    //       alert(
+    //         "Error: Please try again or contact site admin if this persists."
+    //       );
+    //     }
+    //   );
+    // }
   };
 
   return visible ? (
